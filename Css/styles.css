@@ -1,0 +1,63 @@
+:root{
+    --white: #FFFFFF;
+    --black: #212121;
+    --primary: #FFC107;
+    --secundary: #0097a7;
+    --grey: #757575;
+
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px; /* 1rem = 10px. Por que 1 rem equivale aproximadamente a 16 pixeles, entonces si usamos 2 rem el valor de nuestro elemento seria de 32 pixeles; para poder manejar esto de una mejor manera, mas rapido y mas facil lo que hacemos es "formatear" el valor de 1 rem, es decir, que 1 rem equivalga a 10 px, asi que el 62.5% de 16 es igual a 10.*/
+    font-family: 'Krub', sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 3.8rem;
+   
+}
+
+.title span{
+    font-size: 2rem;
+}
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+/*bg se refiere al BackGround. Es un Utility First*/
+.nav-bg{ 
+    background-color: var(--secundary);
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.main-navigation a:hover {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+@media (min-width: 480px) {
+    h1{
+
+    }
+}
+
+@media (min-width: 768px) {
+    h1{
+        
+    }
+}
