@@ -104,17 +104,18 @@ color: var(--black);
 
 @media (min-width: 768px) {
 .main-navigation{
-    flex-direction: row;
-    justify-content: space-between;
+flex-direction: row;
+justify-content: space-between;
 }
 
 .button {
-    width: auto;
+width: auto;
 }
 
 .services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* This property consists of taking a whole number and dividing it into fractions. Where each place is occupied with each fraction. */
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* This property consists of taking a whole number and dividing it into fractions. Where each place is occupied with each fraction. */
+column-gap: 1rem;
 }
 }
 
@@ -150,4 +151,27 @@ display: flex;
 align-items: flex-end;
 }
 
+/* Service */
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.service h3{
+color: var(--secondary);
+font-weight: normal;
+}
+
+.service p{
+line-height: 2;
+}
+.service .icons{
+width: 15rem;
+height: 15rem;
+background-color: var(--primary);
+border-radius: 50%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
